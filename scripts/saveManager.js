@@ -1,5 +1,6 @@
 class SaveManager{
     constructor(settings) {
+        console.log(settings);
         this.username = settings.username;
         this.password = settings.password;
         this.useApiKey = settings.useApiKey;
@@ -199,7 +200,7 @@ class SaveManager{
         if (this.useApiKey === true) {
             if (this.apiKey === null) {console.log("Pleae provide an ApiKey.")} else {return "ApiKey " + this.apiKey}
         } else if (this.useSessionId === true) {
-            if (this.sessionId === null) {console.log("Pleae provide an Session ID.")} else {return "Session " + this.sessionId}
+            if (this.sessionId === null) {console.log("Pleae provide a Session ID.")} else {return "Session " + this.sessionId}
         } else {
             if (this.username === null) {console.log("Pleae provide a username.")}
             if (this.password === null) {console.log("Pleae provide a password.")}
