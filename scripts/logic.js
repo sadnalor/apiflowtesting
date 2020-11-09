@@ -788,4 +788,21 @@ function partial(func /*, 0..n args */) {
     };
 }
 
+const GLOBAL_VARS = {};
+GLOBAL_VARS.context = {
+  "currentObject": API.Context.getData().currentObject,
+  "currentUser": API.Context.getData().currentUser,
+  "server": {
+    "endpointUrlPrefix": API.Context.getData().serverUrl,
+    "sessionId": API.Context.getData().sessionId
+  },
+  "organization": {
+    "Name": API.Context.getData().organizationName,
+    "ExternalId": API.Context.getData().organizationId
+  }
+}
+
+console.log("vars passed:", GLOBAL_VARS.context);
+
+
 main();
