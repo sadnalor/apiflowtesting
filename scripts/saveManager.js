@@ -1,6 +1,6 @@
 class SaveManager{
     constructor(settings) {
-        console.log(settings);
+        this.settings = settings;
         this.username = settings.username;
         this.password = settings.password;
         this.useApiKey = settings.useApiKey;

@@ -69,6 +69,7 @@ class ApiFlowMainMenu {
             saveDataStorageObject: this.saveDataStorageObject,
             appId: this.appId
         };
+        console.trace();
         this.saveManager = new SaveManager(saveManagerSettings); 
         await this.saveManager.load();
         this.showActionsMenu();
