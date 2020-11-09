@@ -751,30 +751,14 @@ const main = async () => {
     let clarizenSettings = {
         viewMode: "Expanded",
         context: {
-            currentObject: {
-                EntityType: "Project",
-                ExternalId: "3algxd65as588mbdqiohfmllh1368"
-            },
-            currentUser: {
-                ExternalId: "5iud9lre7cfpilbalaailivkt3",
-                Name: "Rolandas Pumputis",
-                Email: "roland.pumputis@clarizen.com",
-                Admin: true,
-                LiteAdmin: false,
-                SuperUser: true,
-                Financial: true
-            },
-            server: {
-                endpointUrlPrefix: "https://api.clarizen.com/V2.0/services",
-                sessionId: "974b22e1-acf4-4af6-abe8-a4355f519c3d_26464129" //to implement
-            },
-            organization: {
-                someField: "nothing" //to implement
-            }
+            currentObject: GLOBAL_VARS.context.currentObject,
+            currentUser: GLOBAL_VARS.context.currentUser,
+            server: GLOBAL_VARS.context.server,
+            organization: GLOBAL_VARS.context.server
         },
-        appId: "some-app",
-        encryptionKey: "someKey",
-        saveDataStorageObject: "/DiscussionGroup/5iud9lre7cfpilbalaailivkt6"
+        appId: GLOBAL_VARS.context.appId,
+        encryptionKey: GLOBAL_VARS.context.encryptionKey,
+        saveDataStorageObject: GLOBAL_VARS.context.saveDataStorageObject
     },
     mainMenu = new ApiFlowMainMenu(clarizenSettings);
     await mainMenu.initialize();
@@ -799,7 +783,10 @@ GLOBAL_VARS.context = {
   "organization": {
     "Name": API.Context.getData().organizationName,
     "ExternalId": API.Context.getData().organizationId
-  }
+  },
+  "appId": API.Context.getData().appUniqueId,
+  "encryptionKey": API.Context.getData().encryptionKey,
+  "saveDataStorageObject": API.Context.getData().dataObjectStorageLocation
 }
 
 console.log("vars passed:", GLOBAL_VARS.context);
