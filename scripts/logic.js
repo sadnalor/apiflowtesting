@@ -56,6 +56,7 @@ class ApiFlowMainMenu {
     }
 
     initialize = async () => {
+        console.log("init");
         this.loader.show();
         let saveManagerSettings = {
             useApiKey: false,
