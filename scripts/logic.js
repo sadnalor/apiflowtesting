@@ -60,6 +60,8 @@ class ApiFlowMainMenu {
         let saveManagerSettings = {
             useApiKey: false,
             apiKey: "",
+            useSessionId: true,
+            sessionId: null,
             endpointUrlPrefix: this.context.server.endpointUrlPrefix,
             username: "",
             password: "",

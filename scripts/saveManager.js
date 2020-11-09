@@ -196,6 +196,8 @@ class SaveManager{
     initialize = async () => {
         if (this.useApiKey === true) {
             if (this.apiKey === null) {console.log("Pleae provide an ApiKey.")} else {return "ApiKey " + this.apiKey}
+        } else if (this.useSessionId === true) {
+            if (this.sessionId === null) {console.log("Pleae provide an Session ID.")} else {return "Session " + this.sessionId}
         } else {
             if (this.username === null) {console.log("Pleae provide a username.")}
             if (this.password === null) {console.log("Pleae provide a password.")}
