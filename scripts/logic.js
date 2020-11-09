@@ -56,7 +56,6 @@ class ApiFlowMainMenu {
     }
 
     initialize = async () => {
-        console.log("init");
         this.loader.show();
         let saveManagerSettings = {
             useApiKey: false,
@@ -70,8 +69,8 @@ class ApiFlowMainMenu {
             saveDataStorageObject: this.saveDataStorageObject,
             appId: this.appId
         };
-        console.trace();
         this.saveManager = new SaveManager(saveManagerSettings); 
+        console.log(this.saveManager);
         await this.saveManager.load();
         this.showActionsMenu();
         this.loader.hide();
