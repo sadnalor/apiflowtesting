@@ -269,6 +269,7 @@ class SaveManager{
     }
 
     request = settings => {
+        console.trace();
         return new Promise ((success, fail) => {
             let xhr = new XMLHttpRequest();
             xhr.open(settings.method, settings.endpoint, true);
