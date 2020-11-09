@@ -16,7 +16,7 @@ class SaveManager{
         this.groupedRawData = null;
         this.decryptedData = null;
         this.encryptionKey = "test";
-        console.log('sss');
+        console.log('ssss');
     }
 
     load = async () => {
