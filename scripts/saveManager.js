@@ -4,6 +4,8 @@ class SaveManager{
         this.password = settings.password;
         this.useApiKey = settings.useApiKey;
         this.apiKey = settings.apiKey;
+        this.useSessionId = settings.useSessionId;
+        this.sessionId = settings.sessionId;
         this.endpointUrlPrefix = settings.endpointUrlPrefix;
         this.saveDataStorageObject = settings.saveDataStorageObject;
         this.saveFileDataType = settings.saveFileDataType;
