@@ -59,10 +59,10 @@ class ApiFlowMainMenu {
         this.loader.show();
         let saveManagerSettings = {
             useApiKey: false,
-            apiKey: "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhNTEyIiwidHlwIjoiSldUIn0.eyJ1c2VyTmFtZSI6InJvbGFuZGFzLmRlbW8iLCJ1c2VySWQiOiI5LjE1MzIzNjM1My4yNjQ2NDEyOSIsImFwaUtleUlkIjoiNjcwLjYwMjI1LjI2NDY0MTI5IiwiYXBwbGljYXRpb25BY2Nlc3MiOiJBcGkiLCJuYmYiOjE1OTk2NjQyNDEsImV4cCI6MTYzMTIwMDI0MSwiaXNzIjoiY2xhcml6ZW4uY29tIn0.VwmnPOnVO5kd44-v3C_UMOkZ8X25SCCKklNFEneg18hXeTpgFppofyk1xv2LGFv-ecbqaQgL_A1RQMkuKWxHGueqpYTLhZbf51btWK__neq2Z86zcsRC0SFfD3YBhBVjkKcWrbKyQWYFy2X5sFoowo_BloADYBuZi6b6-v3ZWvMdzAjz2A0oF0kESZwU3o317lPvUPTaOrg2uo8Q4DffeazauzO2X08vNKJfkAJYBTA4pClMH5YRyVz7bfR--o8w_H_61dfMAeRBMcL8GioqICPs_4aRMSTkJnXJ-PpCgOl8_XGTzErODPZRq5G2zUBWqF2GvG57VYLX2O_N5QK6vA",
+            apiKey: "",
             endpointUrlPrefix: this.context.server.endpointUrlPrefix,
-            username: "rolandas.demo",
-            password: "S1aptazodis",
+            username: "",
+            password: "",
             saveFileDataType: "API Flow Save Data",
             saveDataStorageObject: this.saveDataStorageObject,
             appId: this.appId
