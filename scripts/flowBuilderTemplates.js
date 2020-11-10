@@ -1694,17 +1694,6 @@ class FlowBuilderTemplates {
     }
 
 
-    clarizenOneLoginUsProdTemplate = (parentAddress, level, order) => {
-        return this.presetApiCallTemplate(parentAddress, level, order, 
-            "POST",
-            "https://api.clarizen.com/V2.0/services/authentication/Login",
-            "{}",
-            `{"username": "rolandas.demo", "password": "S1aptazodis"}`,
-            "Clarizen One Login US Prod"
-        );
-    }
-
-
     
     userInputFormTemplate = (parentAddress, level, order) => {
         return {
